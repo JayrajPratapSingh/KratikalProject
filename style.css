@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Container css */
+.main-container{
+    width: 100%;
+    background-image: url(./assets/banner\ \(4\).webp);
+    background-repeat: no-repeat;
+   
+    font-family: arial;
+}
+
+nav{
+    padding: 10vh 2vh 8vh 20vh;
+}
+
+
+/* First container CSS */
+
+.container1-sub-container{
+    width: 100%;
+    /* height: 70vh; */
+display: flex;
+flex-direction: row;
+padding: 5vh 0vh 12vh 20vh;
+}
+
+/* Container 1 left side CSS */
+.container1-left{
+    width: 50%;
+
+}
+.container1-left p{
+    font-size: 2.5vh;
+    color: rgb(255, 136, 0);
+    font-weight: bolder;
+    margin-bottom: 2vh;
+}
+.container1-left h1{
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+.container1-left h3{
+    width: 50%;
+    font-size: 2vh;
+}
+.users{
+   
+    display: flex;
+}
+
+
+.users .circle{
+    height: 10vh;
+    width: 10vh;
+    border: 1vh solid rgb(255, 136, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+.user{
+    width: 38vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+padding: 2vh;
+border-radius: 10px;
+margin-right: 2vh;
+margin-top: 4vh;
+
+}
+.user-text h4{
+    font-size: 2.5vh;
+    font-weight:bolder;
+    margin-top: 1vh;
+}
+
+/* container1 right side CSS */
+.container1-right{
+    width: 28%;
+    margin: auto;
+    background: white;
+    padding: 8vh 5vh;
+    border-radius: 10px;
+    margin-top: -1vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.container1-right h2{
+    margin-bottom: 4vh;
+}
+
+.container1-right h2 span{
+    color: rgb(255, 136, 0);
+   border-bottom: 4px solid rgb(255, 136, 0);
+   padding-bottom: 3px;
+   
+}
+
+form > .txt_field{
+    position: relative;
+    border-bottom:2px solid rgb(197, 183, 166) ;
+    margin: 5px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+   background: none;
+   outline: none;
+   
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    
+    left: 5px;
+    color: #adadad;
+    transform: translateY(25%);
+    font-size: 1.6vh;
+    pointer-events:none;
+    transition: 0.5s;
+}
+
+.txt_field span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:rgb(255, 136, 0);
+    transition: 0.5s;
+}
+
+.txt_field input:focus ~ label, .txt_field input:valid ~label{
+    top: -5px;
+    color: rgb(255, 136, 0);
+
+}
+
+.txt_field input:focus ~ span::before, .txt_field input:valid ~label::before{
+    width: 100%;
+}
+
+
+input[type="submit"]{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid rgb(236, 20, 92);
+    background: rgb(236, 20, 92);
+    border-radius: 6px;
+    margin-top: 4vh;
+    color: wheat;
+    transition: 0.5s;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(184, 9, 67);
+}
+
+/* Overview Section, Why Cratical? Section ,Why Choose Us?  Section,Code Review Section same css for all */
+
+.container2{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh;
+}
+.container2-content{
+    width: 40%;
+
+}
+
+.container2-content .overview-heading{
+    width: 14vh;
+    font-family: arial;
+font-size: 5vh;
+font-weight: bolder;
+border-bottom: 0.7vh solid rgb(255, 136, 0);
+padding-bottom: 2vh;
+margin-bottom: 7vh;
+
+}
+.heading{
+    margin-bottom: 8vh;
+}
+.container2-content .overview-heading2{
+    
+    font-family: arial;
+font-size: 5vh;
+padding-bottom: 2vh;
+font-weight: bolder;
+
+}
+.container2-content .about-overview{
+font-size: 2.6vh;
+font-family: arial;
+line-height: 4vh;
+text-align: justify;
+}
+.container2-image{
+    width: 40%;
+    
+    
+}
+.container2-image img{
+    width: 90%;
+    min-height: 45vh;
+}
+
+
+.bg-gray{
+    background-color: rgb(228, 226, 226);
+}
+.about-overview p{
+    margin-bottom: 2vh;
+}
+.about-overview p img{
+    width: 3vh;
+    height: 2vh;
+    margin-right: 2vh;
+}
+
+
+/*  <!-- Benifits Associated with Code Review section CSS--> */
+.call-button{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8vh;
+}
+.call-button button{
+    font-size: 2.5vh;
+    padding: 2vh 4vh;
+    border-radius: 50px;
+    background-color: rgb(236, 20, 92);
+    color: white;
+    transition: 0.5s;
+}
+.call-button button:hover{
+    background-color: rgb(184, 9, 67);
+}
+
+.icon-box{
+    width: 100%;
+    background-color: white;
+    padding: 10vh;
+}
+.icon-heading{
+  
+    font-size: 4vh;
+    font-family: arial;
+    text-align: center;
+    
+}
+hr{
+    width: 12vh;
+    margin: auto;
+    border-bottom: 5px solid rgb(255, 136, 0);
+    background-color: rgb(255, 136, 0);
+}
+.all-icon{
+  
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    text-align: center;
+    width: 30vh;
+    height: 25vh;
+    padding: 3vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+   
+  transition: 0.5s;
+}
+
+.icons:hover{
+background-color: rgb(255, 136, 0);
+color: white;
+cursor: pointer;
+}
+
+
+.icon-image{
+    width: 10vh;
+    margin: auto;
+   padding: 2vh 1vh;
+   
+   border-radius: 50%;
+    background-color: rgb(247, 243, 243);
+    text-align: center;
+
+}
+.icon-image img{
+width: 5vh;
+height: 5vh;
+}
+.icon-text{
+    font-size: 3vh;
+    margin-top: 1.5vh;
+    font-family: arial;
+    
+}
+
+/* FAQ's Section CSS */
+
+
+.faq{
+    width: 100%;
+    
+    padding: 10vh;
+    background-color: aliceblue;
+}
+.faq-heading{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.faqs{
+    width: 20vh;
+    font-size: 4vh;
+    font-family: arial;
+    font-weight: bolder;
+}
+.line{
+    width: 7vh;
+    height: 0;
+    border: 3px solid rgb(255, 136, 0);
+}
+
+
+main{
+    padding: 10vh;
+    /* min-height: 80vh; */
+    width: 95vh;
+    margin: auto;
+}
+
+h5{
+    font-family: arial;
+font-size: 2.5vh;
+font-weight: 600;
+
+}
+
+.acordion_desc p, .acordion_desc ul li{
+    font-size: 2.2vh;
+    line-height: 28px;
+    font-weight: 500;
+    color: #474444;
+    margin-bottom: 1vh;
+    font-family: arial;
+    text-align: justify;
+   
+
+}
+.acordion_desc ul li{
+    margin-left: 3vh;
+}
+
+.acordion{
+    width: 80vh;
+    margin-left: 0 auto;
+
+}
+.acordion-item{
+    margin-bottom: 1.5vh;
+
+}
+.acordion_title{
+    position: relative;
+    padding: 2.4vh 8vh 2.4vh 3vh;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0.4vh 2vh rgba(0,0,0,0.03);
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+.acordion_title .arrow{
+    position: absolute;
+    right: 3vh;
+    top: 45%;
+    transition: all ease 0.6s 0.5s;
+}
+.acordion_desc{
+    padding: 3vh;
+    background-color: #fff;
+    border-radius: 0 0 1.6px 1.6px;
+    box-shadow: 0 0.4vh 2vh rgba(0,0,0,0.03);
+    border-top: 0.3vh solid rgba(0,0,0,0.7);
+
+}
+
+/* Footer Section Styling */
+
+
+.watermark{
+   
+    font-family: arial;
+    font-size: 10vh;
+    font-weight: bolder;
+    top:0px;
+    position: absolute;
+    left: 30%;
+    top: 555vh;
+    color: rgba(0, 4, 27, 0.2);
+    z-index: -1;
+}
+
+.contact-us{
+    background-color: rgba(0, 4, 27, 0.8);
+    padding: 10vh;
+}
+.contact-us-heading{
+width: 35vh;
+text-align: center;
+margin: auto;
+color: orangered;
+font-size: 4vh;
+font-family: arial;
+}
+.underline{
+    margin-top: 2vh;
+    width: 35vh;
+    
+    background-color: rgb(170, 168, 168);
+}
+.orange-underline{
+    width: 12vh;
+    margin: auto;
+    border: 2px  solid orangered;
+}
+.contact-details{
+    width: 30vh;
+    /* background-color: rgb(236, 178, 178); */
+    font-family: arial;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+}
+.country{
+    font-size: 3vh;
+    font-family: arial;
+    margin-bottom: 2vh;
+}
+.country img{
+    width: 3vh;
+    font-weight: bolder;
+    height: 2.5vh;
+    margin-right: 2vh;
+}
+.contact-details p{
+    margin-bottom: 1vh;
+}
+.contacts{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* media queries */
+
+@media (max-width:930){
+    .main-container{
+        padding: 0;
+    }
+    .container1-left{
+        padding: 0;
+    }
+    .container1-right{
+        padding: 0;
+    }
+}
+
+@media (max-width:800){
+    .container{
+        font-size: 2vh;
+    }
+}
+@media (max-width:800) and (min-width:600){
+    .container{
+        font-size: 1vh;
+        
+    }
+    .all-icon{
+        
+        flex-direction: column;
+    }
+}
